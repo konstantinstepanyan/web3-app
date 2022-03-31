@@ -4,10 +4,22 @@ import styles from '../styles/VendingMachine.module.css';
 
 export default function VendingMachine() {
     return (
-        <Head>
-            <title>VendingMachine App</title>
-            <meta name="description" content="A blockchain vending machine app" />
-            <link rel="icon" href="/favicon.ico" />
-        </Head>
+        <div className={styles.main}>
+            <Head>
+                <title>VendingMachine App</title>
+                <meta name="description" content="A blockchain vending machine app" />
+                <link rel="icon" href="/favicon.ico" />
+            </Head>
+            <nav className="navbar mt-4 mb-4">
+                <div className="container">
+                    <div className="navbar-brand">
+                        <h1>Vending Machine</h1>
+                    </div>
+                    <div className="navbar-end">
+                        <button className="button is-primary">Connect Wallet</button>
+                    </div>
+                </div>
+            </nav>
+        </div>
     )
 }
